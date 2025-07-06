@@ -2,9 +2,9 @@
 
 namespace Kauffinger\Context;
 
+use Kauffinger\Context\Commands\ContextCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Kauffinger\Context\Commands\ContextCommand;
 
 class ContextServiceProvider extends PackageServiceProvider
 {
