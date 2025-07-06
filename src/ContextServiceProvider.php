@@ -2,9 +2,9 @@
 
 namespace Kauffinger\Context;
 
+use Kauffinger\Context\Commands\GetLatestLaravelLogEntryCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Kauffinger\Context\Commands\ContextCommand;
 
 class ContextServiceProvider extends PackageServiceProvider
 {
@@ -20,6 +20,6 @@ class ContextServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_laravel_context_cli_table')
-            ->hasCommand(ContextCommand::class);
+            ->hasCommand(GetLatestLaravelLogEntryCommand::class);
     }
 }
